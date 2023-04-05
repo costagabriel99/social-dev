@@ -5,7 +5,7 @@ const StyledNavbar = styled.div `
     background-color: ${props => props.theme.white};
     height: 80px;
     display: flex;
-    align-itens: center;
+    align-items: center;
     padding: 0 100px;
 
     @media (max-width:  500px) {

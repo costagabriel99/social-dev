@@ -48,7 +48,7 @@ function CreatePost () {
             </TextContainer>
             <BottomContainer>
                 <BottomText>A sua mensagem será pública</BottomText>
-                <Button>Enviar Mensagem</Button>
+                <Button>Enviar</Button>
             </BottomContainer>
         </PostContainer>
     ) 
