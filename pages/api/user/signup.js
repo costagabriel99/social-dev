@@ -7,7 +7,7 @@ import validation from "../../../lib/middlewares/validation"
 import { signupUser } from "../../../modules/user/userservice"
 
 const postSchema = Joi.object ({
-    firstName: Joi.string().required().max(20),
+    firstName: Joi.string().required().max(30),
     lastName: Joi.string().required().max(20),
     user: Joi.string().required().max(30),
     email: Joi.string().email().required().max(100),
@@ -15,9 +15,15 @@ const postSchema = Joi.object ({
 })
 
 const signup = createHandler()
-    .post(validation({body: postSchema}), (req, res) => {
-        signupUser(req.body)
-        res.status(200).json({teste: "ok"})
+    .post(validation({body: postSchema}), async (req, res) => {
+        try {
+           const user = await signupUser(req.body)
+           res.status(201).json(user) 
+        } catch (err) {
+            console.error(err)
+            throw err
+        }
+        
     })
 
 export default signup
