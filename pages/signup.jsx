@@ -5,8 +5,8 @@ import { joiResolver } from '@hookform/resolvers/joi'
 import axios from "axios"
 import { useRouter } from "next/router"
 import { useState } from "react"
-import { signupSchema } from "../modules/user/user.schema"
 
+import { signupSchema } from "../modules/user/user.schema"
 import ImageWithSpace from "../src/components/layout/ImageWithSpace"
 import H1 from "../src/components/typography/H1"
 import H2 from "../src/components/typography/H2"
