@@ -4,7 +4,6 @@ import { useForm } from 'react-hook-form'
 import { joiResolver } from '@hookform/resolvers/joi'
 import axios from "axios"
 import { useRouter } from "next/router"
-import { useState } from "react"
 
 import { signupSchema } from "../modules/user/user.schema"
 import ImageWithSpace from "../src/components/layout/ImageWithSpace"
@@ -33,7 +32,7 @@ const Text = styled.p`
 function SignupPage () {
     const router = useRouter()
     const { control, handleSubmit, formState: {errors}, setError } = useForm({
-        resolver: joiResolver(signupSchema)
+        resolver: joiResolver(signupSchema), mode: "onBlur"
     })
 
     const HandleForm = async (data) => {
