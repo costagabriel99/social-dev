@@ -47,7 +47,7 @@ const handler = createHandler()
             if (!req.session.user) return res.status(401).send()
             const refreshPost = await editPost(req.body, req.session.user)
             if (refreshPost)
-                res.status(200).send({ok: true})
+               return res.status(200).send({ok: true})
             return res.status(400).send('post not found')
         } catch (err) {
             return res.status(500).send(err.message)
