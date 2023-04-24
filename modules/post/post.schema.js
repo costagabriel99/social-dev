@@ -9,3 +9,8 @@ export const createPostSchema = Joi.object ({
 export const deletePostSchema = Joi.object ({
     id: Joi.objectId().required()
 })
+
+export const editPostChema = Joi.object ({
+    id: Joi.objectId().required(), 
+    text: Joi.string().required().max(256).message('A Mensagem pode ter no máximo {{#limit}} caracteres')
+})

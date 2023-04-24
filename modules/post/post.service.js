@@ -22,3 +22,14 @@ export const deletePost = async (id, user) => {
         createdBy: user.id
     })
 }
+
+export const editPost = async (body, user) => {
+    return await Post.findByIdAndUpdate({
+        _id: body.id,
+        createdBy: user.id
+    }, {
+        text: body.text
+    }, {
+        new: true
+    })
+}
