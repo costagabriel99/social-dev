@@ -20,7 +20,9 @@ const StyledButton = styled.button `
         background-color: ${props => props.theme.disable}
     }
 `
-
+const StyledSpan = styled.span`
+    margin-right: 5px;
+`
 
 const Button = ({children, loading, disabled, ...props}) => {
     return (
@@ -28,7 +30,7 @@ const Button = ({children, loading, disabled, ...props}) => {
             disabled={disabled || loading}
             {...props}
         >
-            {loading && <><span>Carregando...</span><img src="./loading.svg" width="14px"/></>}
+            {loading && <><StyledSpan>Carregando...</StyledSpan><img src="./loading.svg" width="14px"/></>}
             {!loading && children}
         </StyledButton>)
 }
