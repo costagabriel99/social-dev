@@ -8,9 +8,8 @@ import { useState } from "react"
 
 import { signupSchema } from "../modules/user/user.schema"
 import ImageWithSpace from "../src/components/layout/ImageWithSpace"
-import H1 from "../src/components/typography/H1"
+import Logo from "../src/components/layout/Logo"
 import H2 from "../src/components/typography/H2"
-import H4 from "../src/components/typography/H4"
 import Button from "../src/components/inputs/Button"
 import Input from "../src/components/inputs/Input"
 
@@ -29,7 +28,6 @@ const Form = styled.form`
 const Text = styled.p`
     text-align: center;
 `
-
 function SignupPage () {
     const router = useRouter()
     const { control, handleSubmit, formState: {errors}, setError } = useForm({
@@ -56,8 +54,7 @@ function SignupPage () {
 
     return (
         <ImageWithSpace>
-            <H1># Social Dev</H1>
-            <H4>Tudo o que acontece no mundo, está aqui!</H4>
+            <Logo onClick={() => router.push('/login')}/>
             <FormContainer>
                 <H2>Crie sua conta</H2>
                 <Form onSubmit={handleSubmit(HandleForm)}>

@@ -8,12 +8,10 @@ import { useState } from "react"
 
 import { loginSchema } from "../modules/user/user.schema"
 import ImageWithSpace from "../src/components/layout/ImageWithSpace"
-import H1 from "../src/components/typography/H1"
+import Logo from "../src/components/layout/Logo"
 import H2 from "../src/components/typography/H2"
-import H4 from "../src/components/typography/H4"
 import Button from "../src/components/inputs/Button"
 import Input from "../src/components/inputs/Input"
-
 
 
 const FormContainer = styled.div `
@@ -66,8 +64,7 @@ function LoginPage () {
 
     return (
         <ImageWithSpace>
-            <H1># Social Dev</H1>
-            <H4>Tudo o que acontece no mundo, está aqui!</H4>
+            <Logo onClick={() => router.push('/login')}/>
             <FormContainer>
                 <H2>Entre em sua conta</H2>
                 <Form onSubmit={handleSubmit(onSubmit)}>
