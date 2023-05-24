@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="ProjetoFullStack" title="#SocialDev" src="./Social-Dev-logo.png" />
+  <img alt="SocialDev" title="#SocialDev" src="/Social-Dev-logo.png" />
 </h1>
 
 Este projeto é uma rede social simplificada, inspirada no Twitter. Foi desenvolvido como um projeto FullStack, utilizando React, Next.js e MongoDB. Ele permite aos usuários compartilhar mensagens de até 256 caracteres.
