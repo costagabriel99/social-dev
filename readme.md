@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="SocialDev" title="#SocialDev" src="/Social-Dev-logo.png" />
+  <img alt="SocialDev" title="#SocialDev" src="https://github.com/costagabriel99/social-dev/assets/121452023/27122bf1-c798-434c-a6cf-70efb79ae4d6" width="300px" />
 </h1>
 
 Este projeto é uma rede social simplificada, inspirada no Twitter. Foi desenvolvido como um projeto FullStack, utilizando React, Next.js e MongoDB. Ele permite aos usuários compartilhar mensagens de até 256 caracteres.
@@ -19,20 +19,20 @@ Este projeto é uma rede social simplificada, inspirada no Twitter. Foi desenvol
 
 ## Tecnologias Utililizadas
 
--React
--Next.js
--MongoDB
--Mongoose
--Styled Components
--Iron Session
--Babel
--Next Connect
--Next Joi
--Bcrypt
--React Hook Form
--Axios
--SWR
--Moment
+- React
+- Next.js
+- MongoDB
+- Mongoose
+- Styled Components
+- Iron Session
+- Babel
+- Next Connect
+- Next Joi
+- Bcrypt
+- React Hook Form
+- Axios
+- SWR
+- Moment
 
 ## Reconhecimentos
 
